@@ -34,8 +34,8 @@ h1:first-of-type {
   }
   
   @keyframes slidein {
-	  0% { margin-left:-600px; }
-	  20% { margin-left:-600px; }
+	  0% { margin-left: -600px; visibility: hidden;}
+	  20% { margin-left:-350px;visibility: hidden; }
 	  35% { margin-left:0px; }
 	  100% { margin-left:0px; }
   }
