@@ -11,6 +11,46 @@
 	background-size: cover;
 	background-position: center;
 }
+
+/* hero animation*/
+h1:first-of-type {    
+	animation: showup 7s infinite;
+  }
+  
+  h1:last-of-type {
+	width:0px;
+	animation: reveal 7s infinite;
+  }
+  
+  h1:last-of-type span {
+	animation: slidein 7s infinite;
+  }
+  
+  @keyframes showup {
+	  0% {opacity:0;}
+	  20% {opacity:1;}
+	  80% {opacity:1;}
+	  100% {opacity:0;}
+  }
+  
+  @keyframes slidein {
+	  0% { margin-left:-600px; }
+	  20% { margin-left:-600px; }
+	  35% { margin-left:0px; }
+	  100% { margin-left:0px; }
+  }
+  
+  @keyframes reveal {
+	  0% {opacity:0;width:0px;}
+	  20% {opacity:1;width:0px;}
+	  30% {width:355px;}
+	  80% {opacity:1;}
+	  100% {opacity:0;width:355px;}
+  }
+/*end animation*/
+
+
+
 nav{
 	display: flex;
 	align-items: center;
@@ -73,10 +113,10 @@ nav ul li a:hover{
 	left:8%;
 	transform: translateY(-50%);
 }
-h1{
+ h1{
 	color: white;
 	margin: 20px 0px 20px;
-	font-size: 75px;
+	font-size: 33px;
 }
 h3{
 	color: white;
