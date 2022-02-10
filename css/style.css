@@ -16,12 +16,7 @@
 h1:first-of-type {    
 	animation: showup 7s infinite;
   }
-  
-  h1:last-of-type {
-	width:0px;
-	animation: reveal 7s infinite;
-  }
-  
+   
   h1:last-of-type span {
 	animation: slidein 7s infinite;
   }
